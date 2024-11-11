@@ -86,4 +86,4 @@ For any questions or feedback, feel free to reach out:
 
 ---
 
-**Enjoy exploring *Food Love*! 🍜**# food_love
+**Enjoy exploring *Food Love*! 🍜**
