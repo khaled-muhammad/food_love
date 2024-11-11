@@ -63,7 +63,7 @@ The website’s colors are based on a warm and inviting yellow palette:
 
 ## ✨ Website Preview
 
-![Food Love Website Screenshot](https://via.placeholder.com/1200x600)
+![Food Love Website Screenshot](screenshots/screenshot1.png)
 
 ## 🎉 Future Enhancements
 
