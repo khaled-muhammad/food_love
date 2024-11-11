@@ -30,7 +30,7 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/food-love.git
+   git clone https://github.com/khaled-muhammad/food-love.git
    ```
 
 2. **Navigate to the project folder**
@@ -81,8 +81,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Email**: khaledmuhmmed99@gmail.com@example.com
+- **GitHub**: [khaled-muhammad](https://github.com/khaled-muhammad)
 
 ---
 
