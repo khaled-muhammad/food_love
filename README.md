@@ -81,7 +81,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: khaledmuhmmed99@gmail.com@example.com
+- **Email**: khaledmuhmmed99@gmail.com
 - **GitHub**: [khaled-muhammad](https://github.com/khaled-muhammad)
 
 ---
