@@ -1,0 +1,286 @@
+/* Reset margin and padding for all elements, and set box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Set the main font for the body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Overlay styling with semi-transparent background, full height, and column flex layout */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.446);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styling: horizontally align items with padding on sides */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+/* Set width of the brand logo inside the navbar */
+.navbar .nav-brand img {
+    width: 100px;
+}
+
+/* Navigation links container with space between each link */
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+/* Remove list style from navigation links */
+.nav-links li {
+    list-style: none;
+}
+
+/* Individual navigation link styling */
+.navlink {
+    color: white;
+    position: relative;
+}
+
+/* Underline effect on hover for navigation links */
+.navlink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #E3B151;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width ease-in-out .4s;
+}
+
+/* Expand underline on hover or if the link is active */
+.navlink-active::after,
+.navlink:hover::after {
+    width: 200%;
+}
+
+/* Button styling with rounded corners, uppercase text, and custom padding */
+.outline-white-btn,
+.grey-btn {
+    border-radius: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Outline button with transparent background and white border */
+.outline-white-btn {
+    border: white 1px solid;
+    background-color: transparent;
+    color: white;
+}
+
+/* Grey button with solid background and white text */
+.grey-btn {
+    background-color: #31313F;
+    color: white;
+}
+
+/* Home section styling with full viewport height, centered background image, and white text */
+#home {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50%;
+    background-image: url('../imgs/home_bg.jpeg');
+    color: white;
+}
+
+/* Content in the home section, centered both vertically and horizontally */
+#home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 70%;
+    gap: 50px;
+}
+
+/* Main heading styling in the home section */
+#home .content h1 {
+    font-size: 48px;
+}
+
+/* Highlighted color for certain text in the home heading */
+#home .content h1 span {
+    color: #E3B151;
+}
+
+/* Food lover section with full viewport height and dark text color */
+#food-lover {
+    height: 100vh;
+    padding-top: 150px;
+    color: #31313F;
+}
+
+/* Centered title styling in the food lover section */
+#food-lover .title {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Centered description under the title in the food lover section */
+#food-lover .title-desc {
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* Food lover content row with padding and flex layout */
+#food-lover .row {
+    margin-top: 50px;
+    padding: 0 250px;
+    display: flex;
+}
+
+/* Text section within the row, taking half the width and with padding on the right */
+#food-lover .row .text-content {
+    width: 50%;
+    padding-right: 50px;
+}
+
+/* Paragraph text within text content, with line spacing */
+#food-lover .row .text-content p {
+    line-height: 30px;
+    font-size: large;
+}
+
+/* Image section within the row, taking half the width and with padding on the left */
+#food-lover .row .image-container {
+    width: 50%;
+    padding-left: 50px;
+}
+
+/* Special offers section with background image and centered text */
+#special-offers {
+    min-height: 80vh;
+    background-image: url('../imgs/offer-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+}
+
+/* Title styling for special offers section */
+#special-offers .title {
+    text-align: center;
+    color: #f0a500;
+    font-size: 46px;
+}
+
+/* Centered description styling in the special offers section */
+#special-offers .description {
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+}
+
+/* Carousel container with centered items, relative positioning, and hidden overflow */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+/* Individual slide in the carousel with centered content */
+.carousel-slide {
+    text-align: center;
+    padding: 10px;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+/* Carousel track for holding slides, animated transition for smooth scrolling */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Circular images in the carousel with margin */
+.carousel-slide img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* General heading styling */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Price styling */
+.price {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Original price with strikethrough and grey color */
+.original-price {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+/* Discounted price with highlight color */
+.discounted-price {
+    color: #f0a500;
+    font-weight: bold;
+}
+
+/* Buttons for navigating carousel with background and hover effects */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Position left button */
+.left-btn {
+    left: 0;
+}
+
+/* Position right button */
+.right-btn {
+    right: 0;
+}
+
+/* Hover effect for carousel buttons */
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

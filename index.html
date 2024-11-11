@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Love</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <section id="home">
+            <div class="overlay">
+                <nav class="navbar">
+                    <a href="/" class="nav-brand"><img src="imgs/logo.png" alt="Food Love"></a>
+                    <ul class="nav-links">
+                        <li><a href="#" class="navlink navlink-active">Home</a></li>
+                        <li><a href="#" class="navlink">About</a></li>
+                        <li><a href="#" class="navlink">Menu</a></li>
+                        <li><a href="#" class="navlink">Gallery</a></li>
+                        <li><a href="#" class="navlink">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <h1>Welcome To <span>Food Lover</span> Restaurant</h2>
+                    <p>Here you can find Most delicious food in the world</p>
+                    <button class="outline-white-btn">Book a Table</button>
+                </div>
+            </div>
+        </section>
+        <section id="food-lover">
+            <h1 class="title">The Food Lover history</h1>
+            <p class="title-desc">More than 25+ years of experience</p>
+            <div class="row">
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quibusdam saepe natus numquam dolorum aliquam ducimus molestias tenetur? Quaerat, atque blanditiis. Debitis voluptatem sequi quibusdam nihil eveniet obcaecati soluta rem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nesciunt aspernatur earum sequi consequatur, quasi iste quod nam esse adipisci neque commodi voluptate deserunt architecto rerum. Blanditiis labore sed sapiente.</p>
+                    <button class="grey-btn">Learn More</button>
+                </div>
+                <div class="image-container">
+                    <img src="imgs/about_img.png" alt="About Food Image">
+                </div>
+            </div>
+        </section>
+        <section id="special-offers">
+            <h1 class="title">Our Special Offers</h1>
+            <p class="description">More than 25+ years of experience</p>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="imgs/offer1.png" alt="Tomato Pasta">
+                        <h2>Tomato Pasta</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                        <p class="price"><sub class="original-price">$55.00</sub> <span class="discounted-price">$18.00</span></p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imgs/offer2.png" alt="Quattro Pasta">
+                        <h2>Quattro Pasta</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                        <p class="price"><sub class="original-price">$55.00</sub> <span class="discounted-price">$18.00</span></p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imgs/offer3.png" alt="Spaghetti Pasta">
+                        <h2>Spaghetti Pasta</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+                        <p class="price"><sub class="original-price">$55.00</sub> <span class="discounted-price">$18.00</span></p>
+                    </div>
+                </div>
+                <button class="carousel-btn right-btn" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
